@@ -1,3 +1,9 @@
+#Crear carpeta de trabajo sino existe
+if(!file.exists("c://ActividadModulo3//")){dir.create("c://ActividadModulo3//")}
+
+#Establecer carpeta de trabajo
+setwd("c://ActividadModulo3")
+
 #Crear la carpetas con el "messy dataset" y el "tidy dataset" sino existen
 if(!file.exists(".//messydataset")){dir.create(".//messydataset")}
 if(!file.exists(".//tidydataset")){dir.create(".//tidydataset")}
