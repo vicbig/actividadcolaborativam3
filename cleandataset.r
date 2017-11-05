@@ -35,7 +35,7 @@ kable(head(datasettidy[,1:9]))
 colnames(datasettidy) <- c("year","artist","track","time","style","date.entered","date.peaked","week","rank")
 
 #Limpiamos la columna week
-datasettidy$week <-gsub("st.week","",datasettidy$week)
+datasettidy$week <-gsub(".week","",datasettidy$week)
 datasettidy$week <-gsub("x","",datasettidy$week)
 kable(head(datasettidy[,1:9]))
 
